@@ -86,3 +86,9 @@
           <option value="WI">Wisconsin</option>
           <option value="WY">Wyoming</option>
         </select>
+
+
+
+        <div class="slider">
+          <?php if(is_home()) { if ( function_exists( "easingslider" ) ) { easingslider( 17 ); } } ?>
+        </div>
