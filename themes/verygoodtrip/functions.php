@@ -26,3 +26,21 @@ function new_excerpt_length($length) {
 return 30;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
+
+
+/**
+Custom Post Type
+*/
+add_action('init','custom_post_type');
+
+function custom_post_type(){
+    register_post_type('tutoriel',
+        array(
+            'labels' => array(
+                'name' => __('Tutoriel'),
+                'singular_name' => __('tutoriel')
+            ),
+            'public' => true,
+        )
+    );
+}

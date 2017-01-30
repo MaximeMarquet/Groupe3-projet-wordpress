@@ -87,8 +87,14 @@
           <option value="WY">Wyoming</option>
         </select>
 
-
+        <div>
+          <ul>
+          <?php 
+            wp_list_categories();
+           ?>
+          </ul>
+        </div>
 
         <div class="slider">
-          <?php if(is_home()) { if ( function_exists( "easingslider" ) ) { easingslider( 17 ); } } ?>
+          <?php if( is_front_page()) { if ( function_exists( "easingslider" ) ) { easingslider( 17 ); } } ?>
         </div>
