@@ -1,0 +1,94 @@
+/*
+Theme Name: verygoodtrip
+Author: MOI
+Author URL: www.google.com
+Description:Mon premier thème
+Version: 0.0.1
+
+*/
+
+body {
+	background-color: red;
+}
+
+.grey {
+    background: #EEEEEE;
+}
+
+.slider{
+	width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.easingslider{
+	margin: 0 auto;
+}
+
+section{
+    display: block;
+    overflow: hidden;
+}
+
+.container{
+    padding: 30px;
+}
+
+.three-col >.col{
+    width: 32%;
+}
+
+.col{
+    float: left;
+    margin-left: 2%;
+}
+
+.col:first-child {
+    margin-left: 0;
+}
+
+.three-col {
+    width: 90%;
+    max-width: calc(1116px - 10%);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.three-last-article > .col{
+	position: relative;
+	height: 550px;
+}
+
+.three-last-article .article-title{}
+.three-last-article .article-thumbnail{
+	width: 100%;
+}
+
+.three-last-article img {
+	 display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.three-last-article .article-content{
+	padding: 15px;
+}
+
+.three-last-article .read-more {
+	position: absolute;
+	bottom: 20px;
+	right:20px;
+}
+.three-last-article .article-extract{
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+
