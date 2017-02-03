@@ -2,6 +2,11 @@
 
 get_header();
 
+global $wp_query;
+
+$bignumber = 999999999; // 
+
+
 
 if(have_posts()){
     while (have_posts()){
@@ -22,6 +27,12 @@ while ( $loop->have_posts()){
 	the_content();
 }
 
+echo paginate_links( array(
+ 'base' => str_replace( $bignumber, '%#%', get_pagenum_link( $bignumber ) ),
+ 'format' => '?paged=%#%',
+ 'current' => max( 1, get_query_var('paged') ),
+ 'total' => $wp_query->max_num_pages
+ ) );
 
 get_footer();
 
