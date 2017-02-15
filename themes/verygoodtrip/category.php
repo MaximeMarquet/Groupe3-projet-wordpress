@@ -1,7 +1,8 @@
-<?php 
+<?php
 
 get_header();
 
+dynamic_sidebar('sidebar_widget');
 
 if(have_posts()){
     while (have_posts()){
@@ -26,5 +27,3 @@ while ( $loop->have_posts()){
 get_footer();
 
 ?>
-
-

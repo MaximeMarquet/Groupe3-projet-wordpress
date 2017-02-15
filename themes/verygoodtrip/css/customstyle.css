@@ -7,7 +7,6 @@ Version: 0.0.1
 
 */
 
-
 .grey {
     background: #EEEEEE;
 }
@@ -117,7 +116,7 @@ section{
 }
 
 #error_404 h1, #error_404 p{
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
 }
 
@@ -127,7 +126,7 @@ section{
   opacity: .8;
 }
 
-#error_404 p {   
+#error_404 p {
   opacity: .8;
   font-size: 20px;
   margin: 8px 0 38px 0;

@@ -1,5 +1,8 @@
 <?php
 
+require 'widgets/sidebar.php';
+require 'widgets/newsletter.php';
+
 /* Enqueue Styles and Scripts */
 function my_scripts_styles() {
     wp_enqueue_style('semantic-css', get_template_directory_uri() . '/css/semantic.min.css');
