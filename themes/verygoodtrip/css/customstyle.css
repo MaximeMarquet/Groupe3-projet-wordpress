@@ -147,3 +147,15 @@ section{
     width: 150px;
     margin-right: 15px;
 }
+
+aside h1{
+    text-align: center;
+}
+
+aside input{
+    width: 100%;
+}
+
+aside input[name="newsletter_email"]{
+    margin-bottom: 5px;
+}

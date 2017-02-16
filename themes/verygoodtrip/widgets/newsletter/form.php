@@ -1,7 +1,4 @@
 <form method="post">
-    <label>
-        Email :
-        <input type="texte" name="newsletter_email" value="">
-    </label>
+    <input name="newsletter_email" placeholder="Email">
     <input type="submit" value="Submit">
 </form>
