@@ -1,6 +1,7 @@
 <?php
 
 require 'widgets/sidebar.php';
+require 'widgets/footer_widget.php';
 require 'widgets/newsletter.php';
 
 /* Enqueue Styles and Scripts */

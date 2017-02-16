@@ -5,7 +5,7 @@ Template Name: Homepage
 
     get_header();
 ?>
- 
+
 
     <div class="container">
 		<section class="three-col three-last-article">
@@ -22,9 +22,9 @@ Template Name: Homepage
 							?>
 					</a>
 					<div class="article-content">
-						<h2 class="article-title">		
-							<?php 
-								the_title(); 
+						<h2 class="article-title">
+							<?php
+								the_title();
 							?>
 						</h2>
 						<p class="article-extract">
@@ -41,13 +41,9 @@ Template Name: Homepage
 						</div>
 					</div>
 				</article>
-			<?php endwhile; ?>		
+			<?php endwhile; ?>
 
-		</section>	
-
-
-		
-
+		</section>
     </div>
 
 

@@ -132,3 +132,18 @@ section{
   margin: 8px 0 38px 0;
   font-weight: bold
 }
+
+.list-category article{
+    background: #EEEEEE;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.4);
+}
+
+.list-category article .article-thumbnail{
+    float:left;
+    height: 150px;
+    width: 150px;
+    margin-right: 15px;
+}
