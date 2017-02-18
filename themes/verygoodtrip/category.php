@@ -1,12 +1,12 @@
 <?php
 get_header();
 ?>
-
 <div class="ui two column centered grid">
   <div class="column">
       <div class="ui centered grid">
         <div class="row">
             <div class="thirteen wide column list-category">
+                <h1><?php echo get_the_category()[0]->name; ?></h1>
 
                 <?php if(have_posts()): ?>
                     <?php while(have_posts()): ?>

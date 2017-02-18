@@ -148,6 +148,10 @@ section{
     margin-right: 15px;
 }
 
+.list-category h1{
+    text-align: center;
+}
+
 aside h1{
     text-align: center;
 }
@@ -158,4 +162,15 @@ aside input{
 
 aside input[name="newsletter_email"]{
     margin-bottom: 5px;
+}
+
+aside .social_networks{
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+aside .social_networks img{
+    max-width: 100%;
+    width: 50%;
 }
