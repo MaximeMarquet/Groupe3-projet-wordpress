@@ -37,7 +37,7 @@ class NewsletterWidget extends WP_Widget {
 
 }
 
-function wpb_load_widget() {
+function load_newsletter() {
 	register_widget('newsletterWidget');
 }
-add_action('widgets_init', 'wpb_load_widget');
+add_action('widgets_init', 'load_newsletter');

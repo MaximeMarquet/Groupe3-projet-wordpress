@@ -3,6 +3,7 @@
 require 'widgets/sidebar.php';
 require 'widgets/footer_widget.php';
 require 'widgets/newsletter.php';
+require 'widgets/social_links.php';
 
 /* Enqueue Styles and Scripts */
 function my_scripts_styles() {

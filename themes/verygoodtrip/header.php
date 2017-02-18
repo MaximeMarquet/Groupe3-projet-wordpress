@@ -18,7 +18,7 @@
                     <?php bloginfo('name'); ?>
                 </a>
 
-                <?php 
+                <?php
                     $categories = get_categories(array(
                             'parent' => 0
                         ));
