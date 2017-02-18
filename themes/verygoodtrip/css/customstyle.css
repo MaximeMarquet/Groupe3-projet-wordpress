@@ -148,6 +148,10 @@ section{
     margin-right: 15px;
 }
 
+.list-category h1{
+    text-align: center;
+}
+
 aside h1{
     text-align: center;
 }
