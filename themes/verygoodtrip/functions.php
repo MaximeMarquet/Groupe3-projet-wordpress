@@ -47,6 +47,7 @@ add_theme_support('post-thumbnails');
 add_action('init', 'add_image_sizes');
 function add_image_sizes() {
     add_image_size( 'thumbnail-medium', 400, 300, TRUE ); // force crop true
+    add_image_size( 'thumbnail-large', 1080, 800, TRUE ); // force crop true
 }// end
 
 
