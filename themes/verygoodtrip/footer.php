@@ -15,7 +15,7 @@
                 <div class="ui inverted link list">
                     <a href="#" class="item">Lorem</a>
                     <a href="#" class="item">Lorem</a>
-                    <a href="#" class="item">HLorem</a>
+                    <a href="#" class="item">Lorem</a>
                     <a href="#" class="item">Lorem</a>
                 </div>
                 </div>
@@ -27,7 +27,7 @@
             </div>
             </div>
         </div>
-       
+
         <?php
 
 

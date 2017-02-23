@@ -1,6 +1,5 @@
 <?php
-
-get_header();
+    get_header();
 ?>
 
 <div class="slider">
@@ -29,5 +28,4 @@ while ( $loop->have_posts()){
 
 
 get_footer();
-
 ?>

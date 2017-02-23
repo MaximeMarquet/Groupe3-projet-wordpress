@@ -49,12 +49,4 @@ Template Name: Homepage
 
 
 <?php
-
-$loop = new WP_Query(array('post_type'=>'events'));
-while ( $loop->have_posts()){
-	$loop->the_post();
-	the_title();
-	the_content();
-}
-
     get_footer();
