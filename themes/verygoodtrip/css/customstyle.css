@@ -200,3 +200,12 @@ aside .social_networks img{
 .pagination .page-numbers.current{
     color: #551A8B;
 }
+
+.article-post{
+    text-align: justify;
+}
+
+.article-post .wp-post-image{
+    float:left;
+    margin-right: 12px;
+}
