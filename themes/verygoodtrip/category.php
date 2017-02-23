@@ -13,14 +13,17 @@ get_header();
                         <?php the_post(); ?>
                             <article>
                                 <a href="<?php the_permalink() ?>" class="article-thumbnail" rel="bookmark">
-                                        <?php the_post_thumbnail('thumbnail'); ?>
+                                        <?php the_post_thumbnail('medium_large', 'thumbnail'); ?>
                                 </a>
                                 <div class="article-content">
-                                    <h2 class="article-title">
-                                        <?php
-                                            the_title();
-                                        ?>
-                                    </h2>
+                                    <a href="<?php the_permalink() ?>">
+                                        <h2 class="article-title">
+                                            <?php
+                                                the_title();
+                                            ?>
+                                        </h2>
+                                    </a>
+
                                     <p class="article-extract">
                                         <?php
                                             the_excerpt();

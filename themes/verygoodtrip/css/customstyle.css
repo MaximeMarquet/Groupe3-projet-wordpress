@@ -59,7 +59,7 @@ section{
 
 .three-last-article > .col{
 	position: relative;
-	height: 550px;
+	height: 650px;
 }
 
 .three-last-article .article-title{}
@@ -147,6 +147,15 @@ section{
     height: 150px;
     width: 150px;
     margin-right: 15px;
+}
+
+.list-category article .wp-post-image{
+    height: 150px;
+    width: 150px;
+}
+
+.list-category article a{
+    color:inherit;
 }
 
 .list-category h1{

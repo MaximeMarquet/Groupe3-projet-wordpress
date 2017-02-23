@@ -2,9 +2,6 @@
     get_header();
 ?>
 
-<div class="slider">
-  <?php if( is_front_page()) { if ( function_exists( "easingslider" ) ) { easingslider( 17 ); } } ?>
-</div>
 
 <?php
 if(have_posts()){
