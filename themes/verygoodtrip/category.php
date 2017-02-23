@@ -41,15 +41,13 @@ get_header();
 </div>
 
 <?php
-/*
 
-$loop = new WP_Query(array('post_type'=>'events'));
-while ( $loop->have_posts()){
-	$loop->the_post();
-	the_title();
-	the_content();
-}
-*/
+echo paginate_links( array(
+ 'base' => str_replace( $bignumber, '%#%', get_pagenum_link( $bignumber ) ),
+ 'format' => '?paged=%#%',
+ 'current' => max( 1, get_query_var('paged') ),
+ 'total' => $wp_query->max_num_pages
+ ) );
 
 get_footer();
 
