@@ -13,14 +13,17 @@ get_header();
                         <?php the_post(); ?>
                             <article>
                                 <a href="<?php the_permalink() ?>" class="article-thumbnail" rel="bookmark">
-                                        <?php the_post_thumbnail('thumbnail'); ?>
+                                        <?php the_post_thumbnail('medium_large', 'thumbnail'); ?>
                                 </a>
                                 <div class="article-content">
-                                    <h2 class="article-title">
-                                        <?php
-                                            the_title();
-                                        ?>
-                                    </h2>
+                                    <a href="<?php the_permalink() ?>">
+                                        <h2 class="article-title">
+                                            <?php
+                                                the_title();
+                                            ?>
+                                        </h2>
+                                    </a>
+
                                     <p class="article-extract">
                                         <?php
                                             the_excerpt();
@@ -30,6 +33,22 @@ get_header();
                             </article>
                     <?php endwhile; ?>
                 <?php endif; ?>
+
+                <?php
+                    global $wp_query;
+                    $bignumber = 999999999;
+                ?>
+
+                <div class="pagination">
+                    <?php
+                    echo paginate_links(array(
+                            'base' => str_replace($bignumber, '%#%', get_pagenum_link($bignumber)),
+                            'format' => '?paged=%#%',
+                            'current' => max(1, get_query_var('paged')),
+                            'total' => $wp_query->max_num_pages
+                        ));
+                    ?>
+                </div>
             </div>
 
           <div class="three wide column">
@@ -41,16 +60,5 @@ get_header();
 </div>
 
 <?php
-/*
-
-$loop = new WP_Query(array('post_type'=>'events'));
-while ( $loop->have_posts()){
-	$loop->the_post();
-	the_title();
-	the_content();
-}
-*/
-
-get_footer();
-
+    get_footer();
 ?>
