@@ -30,6 +30,22 @@ get_header();
                             </article>
                     <?php endwhile; ?>
                 <?php endif; ?>
+
+                <?php
+                    global $wp_query;
+                    $bignumber = 999999999;
+                ?>
+
+                <div class="pagination">
+                    <?php
+                    echo paginate_links(array(
+                            'base' => str_replace($bignumber, '%#%', get_pagenum_link($bignumber)),
+                            'format' => '?paged=%#%',
+                            'current' => max(1, get_query_var('paged')),
+                            'total' => $wp_query->max_num_pages
+                        ));
+                    ?>
+                </div>
             </div>
 
           <div class="three wide column">
@@ -41,15 +57,5 @@ get_header();
 </div>
 
 <?php
-global $wp_query;
-$bignumber = 999999999;
-
-echo paginate_links( array(
- 'base' => str_replace($bignumber, '%#%', get_pagenum_link($bignumber)),
- 'format' => '?paged=%#%',
- 'current' => max( 1, get_query_var('paged') ),
- 'total' => $wp_query->max_num_pages
- ));
-
-get_footer();
+    get_footer();
 ?>

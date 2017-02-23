@@ -44,7 +44,3 @@
                 ?>
             </div>
         </div>
-
-        <div class="slider">
-          <?php if( is_front_page()) { if ( function_exists( "easingslider" ) ) { easingslider( 17 ); } } ?>
-        </div>

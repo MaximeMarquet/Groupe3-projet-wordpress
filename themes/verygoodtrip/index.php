@@ -1,8 +1,13 @@
-<?php 
+<?php
 
 get_header();
+?>
 
+<div class="slider">
+  <?php if( is_front_page()) { if ( function_exists( "easingslider" ) ) { easingslider( 17 ); } } ?>
+</div>
 
+<?php
 if(have_posts()){
     while (have_posts()){
         the_post();
@@ -26,5 +31,3 @@ while ( $loop->have_posts()){
 get_footer();
 
 ?>
-
-

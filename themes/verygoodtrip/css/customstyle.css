@@ -139,6 +139,7 @@ section{
     height: 150px;
     margin-bottom: 15px;
     box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.4);
+    overflow: hidden;
 }
 
 .list-category article .article-thumbnail{
@@ -173,4 +174,20 @@ aside .social_networks{
 aside .social_networks img{
     max-width: 100%;
     width: 50%;
+}
+
+.pagination{
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.pagination .page-numbers{
+    background-color: #eee;
+    padding: 5px 10px;
+    margin-left: 2px;
+    color: #000;
+}
+
+.pagination .page-numbers.current{
+    color: #551A8B;
 }
